@@ -12,7 +12,7 @@ const Resize = styled.img`
 const View = () => {
     return(
         <div>
-
+            <Resize src={Disc} alt="Disc image"/>
         </div>
     )
 }
