@@ -7,9 +7,9 @@ import './App.css';
 function App() {
   return (
     <div>
-      {/* <Navbar/> */}
+      <Navbar/>
       <h1 className="shopTitle"
-      style={{textAlign: 'center', marginTop: '-3em'}}>Shop Records!</h1>
+      style={{textAlign: 'center', marginTop: '2em'}}>Shop Records!</h1>
     </div>
   );
 }
