@@ -12,7 +12,7 @@ function App() {
       <Navbar/>
       <ViewOne/>
       <h1 className="shopTitle"
-      style={{textAlign: 'center', marginTop: '-3em'}}>Shop Records!</h1>
+      style={{textAlign: 'center', marginTop: '-5em'}}>Shop Records!</h1>
       <ViewTwo/>
     </div>
   );

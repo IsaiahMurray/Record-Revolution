@@ -17,7 +17,7 @@ const Row = styled.div`
     width: 100%;
 `;
 
-const Column = style.div`
+const Column = styled.div`
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -33,7 +33,7 @@ const Wrapper = styled.div`
     padding: 2em;
 `;
 
-const useStyles = maekstyles({
+const useStyles = makeStyles({
     card: {
         maxHeight: 450,
         maxWidth: 345,
@@ -42,14 +42,87 @@ const useStyles = maekstyles({
 
 const ViewTwo = () => {
 
+    const classes = useStyles();
+
     return(
         <Background>
             <Row>
+                
                 <Column>
                     <Wrapper>
-
+                        <Card className={classes.card}>
+                            <CardActionArea>
+                                <CardMedia
+                                component="img"
+                                alt="Joy Division"
+                                height="180"
+                                image="https://user-images.githubusercontent.com/1282581/27998739-72b0129e-650b-11e7-88bb-94f8c8427e9c.png"
+                                title="Joy Division"/>
+                                <CardContent>
+                                    <Typography gutterBottom variant='h5'>Joy Division</Typography>
+                                    <Typography variant='body2' color='textSecondary' component='p'>
+                                    Designer Peter Saville's decision to go with pulsar radio waves is right up there with Martin Hannett’s spellbinding production in making this album a goth classic. Disney's Mickey Mouse shirt parody four decades later only reaffirmed its legend.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size='small' color='dark'>Share</Button>
+                                <Button size='small' color='dark'>Learn More</Button>
+                            </CardActions>
+                        </Card>
                     </Wrapper>
                 </Column>
+
+                <Column>
+                    <Wrapper>
+                        <Card className={classes.card}>
+                            <CardActionArea>
+                                <CardMedia
+                                component="img"
+                                alt="Joy Division"
+                                height="180"
+                                image="https://user-images.githubusercontent.com/1282581/27998739-72b0129e-650b-11e7-88bb-94f8c8427e9c.png"
+                                title="Joy Division"/>
+                                <CardContent>
+                                    <Typography gutterBottom variant='h5'>Joy Division</Typography>
+                                    <Typography variant='body2' color='textSecondary' component='p'>
+                                    Designer Peter Saville's decision to go with pulsar radio waves is right up there with Martin Hannett’s spellbinding production in making this album a goth classic. Disney's Mickey Mouse shirt parody four decades later only reaffirmed its legend.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size='small' color='dark'>Share</Button>
+                                <Button size='small' color='dark'>Learn More</Button>
+                            </CardActions>
+                        </Card>
+                    </Wrapper>
+                </Column>
+
+                <Column>
+                    <Wrapper>
+                        <Card className={classes.card}>
+                            <CardActionArea>
+                                <CardMedia
+                                component="img"
+                                alt="Joy Division"
+                                height="180"
+                                image="https://user-images.githubusercontent.com/1282581/27998739-72b0129e-650b-11e7-88bb-94f8c8427e9c.png"
+                                title="Joy Division"/>
+                                <CardContent>
+                                    <Typography gutterBottom variant='h5'>Joy Division</Typography>
+                                    <Typography variant='body2' color='textSecondary' component='p'>
+                                    Designer Peter Saville's decision to go with pulsar radio waves is right up there with Martin Hannett’s spellbinding production in making this album a goth classic. Disney's Mickey Mouse shirt parody four decades later only reaffirmed its legend.
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size='small' color='dark'>Share</Button>
+                                <Button size='small' color='dark'>Learn More</Button>
+                            </CardActions>
+                        </Card>
+                    </Wrapper>
+                </Column>
+
             </Row>
         </Background>
     )
